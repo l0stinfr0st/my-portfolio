@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('scroll', changeNavOnScroll);
-    changeNavOnScroll(); // To ensure the correct link is highlighted on page load
+    changeNavOnScroll();
 });
 
 
