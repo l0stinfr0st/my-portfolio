@@ -189,7 +189,7 @@ body {
 
 .img:hover {
     transform: scale(1.1);
-    /* Scale up by 20% */
+   
 }
 
 .profile-photo {
@@ -204,7 +204,7 @@ body {
 
 .profile-photo:hover {
     transform: scale(1.1);
-    /* Scale up by 20% */
+    
 }
 
 
@@ -275,7 +275,6 @@ body {
     left: 100%;
     padding-left: 5px;
     width: px;
-    /* Adjust the cursor width as needed */
     height: 100%;
     background-color: #dc143c;
     animation: reveal 8s infinite;
@@ -285,20 +284,16 @@ body {
 @keyframes reveal2 {
     0% {
         left: 100%;
-        /* Start position */
         width: 100%;
     }
 
     50% {
         left: 0%;
-        /* End position */
         width: 100%;
-        /* Fully reveal text */
     }
 
     100% {
         left: 100%;
-        /* Move cursor off-screen */
         width: 100%;
     }
 }
