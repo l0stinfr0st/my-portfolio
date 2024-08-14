@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
+    <div class="contact">
+        <a href="https://github.com/l0stinfr0st" class="btn">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ahmadali-ghazi-145537263/" class="btn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:ahmadalimgahzi@gmail.com" class="btn">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+    <a href=#home class="top"> <i class="fas fa-arrow-up"></i> </a>
+    <header class="fixed-header">
+        <h1 class="name">
+            <span class="black">AH</span><span class="red">MAD</span>
+        </h1>
+        <nav class="nav-menu">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -19,30 +40,76 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="home" class="full-screen">
-            <h2>Home</h2>
-            <p>Welcome to my personal portfolio website. Here you can find information about my skills, projects, and how to contact me.</p>
+        <section id="home" class="full-screen-home">
+            <div class=box>
+                <div class=text>
+                    <p class=naming>Hello, my name is</p>
+                    <h2 class=naming2>Ahmad Ghazi</h2>
+                    <p class=naming3>
+                        <span class="still"> I'm a </span> <span class="ani">Computer Engineer Student. <span
+                                class="cursor"></span><span class="delete"></span></span>
+                    </p>
+                    <a href="pdfs/resume.pdf" download="Ahmad_Ghazi_Resume" class="resume-button">Resume</a>
+                </div>
+                <div class=img>
+                    <img src="images/me.png" alt="picture of me" class="profile-photo">
+                </div>
+            </div>
         </section>
-        <section id="about" class="full-screen">
-            <h2>About</h2>
-            <p>Information about me.</p>
+        <section id="about" class="full-screen-about">
+            <div class="about-me">
+                <div class="about-header">
+                    <h2><span>All </span> <span class='red1'> About </span> <span>Me And My </span>
+                        <span class=red2>Passions</span>
+                    </h2>
+                </div>
+                <div class="pop-in">
+                    <div class="content">
+                        <ul>
+                            <li>Hello! I’m Ahmad El Ghazi & passionate about technology and creating impactful
+                                solutions. I
+                                have a solid background in Back-End Development, DSA and Databases from my university
+                                studies and I've personlly pursued Full-Stack Development.</li>
+                            <li>Throughout my academic journey, I’ve not only developed a keen understanding of coding
+                                and
+                                engineering but have also honed my ability to effectively communicate complex technical
+                                concepts. This has enabled me to collaborate efficiently on projects and contribute
+                                meaningfully to team efforts.</li>
+                            <li>Currently, I am exploring the exciting field of machine learning, having embarked on a
+                                beginner’s journey into this domain. As I continue to learn and grow, I am eager to
+                                leverage
+                                my skills and enthusiasm to contribute to innovative projects and advance my career in
+                                the
+                                tech industry.</li>
+                        </ul>
+                    </div>
+                    <div class="about-pictures"> <img src="images/canva.png" alt="clipart" class="laptop">
+                        <img src="images/backround.png" alt="backround" class="backround">
+                    </div>
+                </div>
+
+            </div>
+
         </section>
-        <section id="projects" class="full-screen">
+        <section id="projects" class="full-screen-projects">
             <h2>Projects</h2>
             <p>Details about my projects.</p>
         </section>
-        <section id="skills" class="full-screen">
+        <section id="skills" class="full-screen-skills">
             <h2>Skills</h2>
             <p>Information about my skills.</p>
         </section>
-        <section id="contact" class="full-screen">
+        <section id="contact" class="full-screen-contact">
             <h2>Contact</h2>
             <p>How to contact me.</p>
         </section>
+        <script src="script.js"></script>
     </main>
     <footer>
         <p>&copy; 2024 Your Name</p>
     </footer>
 </body>
+
 </html>
