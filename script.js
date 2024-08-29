@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
                 entry.target.classList.add('pop-in-visible');
             } else {
-                // Check scroll direction
-                if (window.scrollY < lastScrollY) { // Scrolling up
+                
+                if (window.scrollY < lastScrollY) {
                     entry.target.classList.remove('pop-in-visible');
                 }
             }
         });
         lastScrollY = window.scrollY;
-    }, { threshold: 0.1 }); // Adjust threshold to control when to trigger
+    }, { threshold: 0.1 });
 
     popInElements.forEach(element => {
         observer.observe(element);
